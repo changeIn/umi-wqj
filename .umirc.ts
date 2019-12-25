@@ -2,6 +2,7 @@ import { IConfig } from 'umi-types'; // ref: https://umijs.org/config/
 
 const config: IConfig = {
   //singular:true,  //umi中存放页面代码的文件夹是pages是复数，可改成page单数
+  ssr:true,
   treeShaking: true,
   routes: [
     {
@@ -68,7 +69,7 @@ const config: IConfig = {
 
 
     }],
-
+    // ['@umijs/plugin-prerender']  
   ],
 
 };
