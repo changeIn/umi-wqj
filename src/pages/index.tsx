@@ -9,6 +9,7 @@ export default function() {
     <div className={styles.normal}>
       <h1>Page index</h1>
       <Link to="/users"> go to /users</Link>
+      <Link to="/helloword"> go to /HelloWord</Link>
     </div>
   );
 }
