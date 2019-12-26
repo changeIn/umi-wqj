@@ -1,8 +1,7 @@
 import { IConfig } from 'umi-types'; // ref: https://umijs.org/config/
 
 const config: IConfig = {
-  //singular:true,  //umi中存放页面代码的文件夹是pages是复数，可改成page单数
-  ssr:true,
+  // ssr:true,
   treeShaking: true,
   routes: [
     {
@@ -52,20 +51,20 @@ const config: IConfig = {
           exclude: [/components\//],
         },
 
-        polyfills: ['ie9'],
-        library: 'react',
-        pwa: true,
-        hd: true,
-        fastClick: true,
-        chunks: ['vendor', 'umi'],
-        scripts: [
-          { src: 'http://cdn/a.js' },
-          { src: '<%= PUBLIC_PATH %>a.js' },
-          { content: `alert('a');` },
-        ],
-        headScripts: [],
-        metas: [{ charset: 'utf-8' }],
-        links: [{ rel: 'stylesheet', href: 'http://cdn/a.css' }],
+        // polyfills: ['ie9'],
+        // library: 'react',
+        // pwa: true,
+        // hd: true,
+        // fastClick: true,
+        // chunks: ['vendor', 'umi'],
+        // scripts: [
+        //   { src: 'http://cdn/a.js' },
+        //   { src: '<%= PUBLIC_PATH %>a.js' },
+        //   { content: `alert('a');` },
+        // ],
+        // headScripts: [],
+        // metas: [{ charset: 'utf-8' }],
+        // links: [{ rel: 'stylesheet', href: 'http://cdn/a.css' }],
 
 
     }],

@@ -1,7 +1,7 @@
 import 'jest';
-import BasicLayout from '..';
 import React from 'react';
 import renderer, { ReactTestInstance, ReactTestRenderer } from 'react-test-renderer';
+import BasicLayout from '../index';
 
 describe('Layout: BasicLayout', () => {
   it('Render correctly', () => {
