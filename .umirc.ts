@@ -9,6 +9,10 @@ const config: IConfig = {
       component: '../layouts/index',
       routes: [
         {
+          path: '/products',
+          component: './products',
+        },
+        {
           path: '/',
           component: './index',
         },
@@ -29,11 +33,14 @@ const config: IConfig = {
   ],
   plugins: [
     // ref: https://umijs.org/plugin/umi-plugin-react.html
-    ['umi-plugin-react',{
+    [
+      'umi-plugin-react',
+      {
         antd: true,
-        dva: {
-          immer: true,
-        },
+        dva: true,
+        // dva: {
+        //   immer: true,
+        // },
         // dynamicImport: false,
         dynamicImport: {
           webpackChunkName: true,
@@ -49,9 +56,7 @@ const config: IConfig = {
         },
         routes: {
           exclude: [/components\//],
-        },
-
-        // polyfills: ['ie9'],
+        }, // polyfills: ['ie9'],
         // library: 'react',
         // pwa: true,
         // hd: true,
@@ -65,11 +70,8 @@ const config: IConfig = {
         // headScripts: [],
         // metas: [{ charset: 'utf-8' }],
         // links: [{ rel: 'stylesheet', href: 'http://cdn/a.css' }],
-
-
-    }],
-    // ['@umijs/plugin-prerender']  
+      },
+    ],
   ],
-
 };
 export default config;
