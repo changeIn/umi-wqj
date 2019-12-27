@@ -1,4 +1,4 @@
-import {FormattedMessage,} from 'umi/locale';
+import {FormattedMessage} from 'umi/locale';
 
 // import {formatMessage} from 'umi/locale';
 // console.log(formatMessage({id:'helloword'}));

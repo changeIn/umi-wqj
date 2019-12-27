@@ -3,7 +3,7 @@ import { IConfig } from 'umi-types'; // ref: https://umijs.org/config/
 const config: IConfig = {
   // ssr:true,
   treeShaking: true,
-  routes: [
+  routes: [ //如果配置了 routes ，则约定式路由会不生效
     {
       path: '/',
       component: '../layouts/index',
@@ -56,7 +56,8 @@ const config: IConfig = {
         },
         routes: {
           exclude: [/components\//],
-        }, // polyfills: ['ie9'],
+        }, 
+        // polyfills: ['ie9'],
         // library: 'react',
         // pwa: true,
         // hd: true,
