@@ -8,7 +8,7 @@ import MyMenu from '../components/layout/Menu'
 import { connect } from 'dva';
 
 // import styles from './index.css';
-const { Sider } = Layout;
+// const { Sider } = Layout;
 
 // const BasicLayout: React.FC = props => {
 //   if(props.location.pathname == '/login'){

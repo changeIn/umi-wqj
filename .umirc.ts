@@ -1,7 +1,7 @@
 import { IConfig } from 'umi-types'; // ref: https://umijs.org/config/
 
 const config: IConfig = {
-  // ssr:true,
+  ssr:true,  //服务端渲染
   treeShaking: true,
   routes: [ //如果配置了 routes ，则约定式路由会不生效
     {
@@ -37,10 +37,11 @@ const config: IConfig = {
       'umi-plugin-react',
       {
         antd: true,
-        dva: true,
-        // dva: {
-        //   immer: true,
-        // },
+        // dva: true,
+        dva: {
+          immer: true,
+        },
+        //禁用包括 component 和 models 的按需加载
         // dynamicImport: false,
         dynamicImport: {
           webpackChunkName: true,
